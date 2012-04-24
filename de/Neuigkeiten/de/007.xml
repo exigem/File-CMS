@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<news>
+  <title>Feedseite</title>
+  <status>online</status>
+  <authors>Maik Vattersen</authors>
+  <description>Die RSS Feeds haben eine eigene Seite bekommen, diese wird angezeigt wenn man die Feedadresse http://spike/vaddi/brueder/feed.php aufruft. Wenn man die Feedadresse um den Typen erweitert bekommt man die jeweilige Feedausgabe (rss, rss2, atom0 oder atom) angezeigt. Hier der Link auf die Atom v0.3 Ausgabe http://spike/vaddi/brueder/feed.php?type=atom0 .
+  
+  Kleinere Fehler wurden behoben, der Link auf die Kontakseite verwendet nun automatisch den link zur richtigen Sprache. Der Link konnte von der Hauptseite aus nicht aufgerufen werden, weil dort noch keine Sprache gesetzt ist.
+  </description>
+</news>

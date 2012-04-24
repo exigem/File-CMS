@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config>
+  <base>http://exigem.com/fcms/</base>
+  <site_owner>admin</site_owner>
+  <site_passwd>admin</site_passwd>
+</config>

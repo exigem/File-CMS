@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<news>
+  <title>Unser Mini CMS wächst</title>
+  <status>online</status>
+  <authors>Maik Vattersen</authors>
+  <description>Es ist noch einiges zu tun, aber wir kommen auf jeden Fall gut voran. Die Menufunktion erkennt nun auch Ordner, so das man wie auf der News Seite auch Unterordner mit einer index drin erstellen kann.
+  </description>
+</news>

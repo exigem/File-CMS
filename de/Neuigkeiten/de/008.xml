@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<news>
+  <title>News Pagination</title>
+  <status>online</status>
+  <authors>Maik Vattersen</authors>
+  <description>Die Newsseite zeigt nun die Texte mit korrekten Zeilenumbrüchen an. Im Kopfbereich haben wir das automatische Vor und Zurück Menu zum einfacheren navigieren durch die einzel Newsansicht (Auch nur in der einzel Ansicht sichtbar).
+  </description>
+</news>

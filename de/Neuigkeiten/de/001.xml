@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<news>
+  <title>Erster Newseintrag</title>
+  <status>online</status>
+  <authors>Maik Vattersen</authors>
+  <description>Der erste Newseintrag mit dem neuen System. Links werden automatisch anklickbar gemacht ( http://www.exigem.com/ ). Es gibt eine Archivfunktion und eine Einzelansicht, in dieser werden die vollen Texte angezeigt. In der Übersicht und in der Archivansicht werden nur die ersten 320 Zeichen angezeigt. 
+  
+  
+In den News Beiträgen kann man allerlei nüztliche Informationen weitergeben, die letzen 10 einträge sind auch in anderen Ausgabeformaten abrufbar:
+  RSS http://spike/vaddi/brueder/feed.php 
+  RSS2 http://spike/vaddi/brueder/feed.php?type=rss2 
+  Atom 1.0 http://spike/vaddi/brueder/feed.php?type=atom 
+  Atom 0.9 http://spike/vaddi/brueder/feed.php?type=atom0 
+  </description>
+</news>

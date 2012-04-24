@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<news>
+  <title>Admin Übersicht</title>
+  <status>online</status>
+  <authors>Maik Vattersen</authors>
+  <description>Die Admin Übersicht ( http://spike/vaddi/brueder/admin/ ) wurde angefangen. Hier soll man direkt aus der Seite herraus die Inhalte, Newseinträge, Seiten und Unterseiten erstellen und verwalten können.   
+  
+  Die Darstellung der Newsbeiträge ist immer noch nicht richtig Formatiert, aber das sollte eine Kleinigkeit sein im vergleich zu dem was alles schon läuft ;-).
+  
+  Im Footer haben wir nun Socialbuttons eingebaut. So kann man euch später besser auf Facebook, Twitter &amp; Co folgen. Ein Mailbutton der auf die Kontaktseite verlinkt ist sowie die RSS Newsfeeds. Bei diesen müssen wir noch schauen wie man am besten auf die einzelnen (RSS v0.1 &amp; v2.0, Atom v1 &amp; 0.3)
+  </description>
+</news>
