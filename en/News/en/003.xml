@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <news>
-  <title>Der Footer Bereich quängelt</title>
+  <title>Textcontent btw. Videos</title>
   <status>online</status>
   <authors>Maik Vattersen</authors>
-  <description>Die Sprachauswahlfunktion im Footerbereich funtioniert zur Zeit nicht in Unterordnern.
+  <description>Maybe we should better ad an Textcontent Newspost between two Videos.
   </description>
 </news>

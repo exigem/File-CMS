@@ -63,13 +63,20 @@
         $next = $key +1;
        
         foreach ($verzeichnis_glob as $key2 => $value2) {
-          # code...
           if ($key2 == $prev) {
-             $prev_url = str_replace($verzeichnis_raw, '', $value2);
+              $prev_url = str_replace($verzeichnis_raw, '', $value2);
+              $xml = domxml_open_file($value2);    
+              $root = $xml->root();
+              $prev_array = $root->get_elements_by_tagname("title");    
+              $prev_name = extractText($prev_array);
+              
           } 
           if ($key2 == $next) {
               $next_url = str_replace($verzeichnis_raw, '', $value2);
-              //$next_url = $value2;
+              $xml = domxml_open_file($value2);    
+              $root = $xml->root();
+              $next_array = $root->get_elements_by_tagname("title");    
+              $next_name = extractText($next_array);
           }
         }
       }
@@ -95,9 +102,11 @@
     $desc_array = $root->get_elements_by_tagname("description");
     $description = extractText($desc_array);
 #    $description = htmlspecialchars("$description", ENT_NOQUOTES, "UTF-8");
+    // Replace Linebreaks
     $description = str_replace( $r1, $r2, $description );
-    $description = preg_replace("~[[:alpha:]]+://[^<>[:space:]]+[[:alnum:]/]~","<a href=\"\\0\" target=\"_blank\">\\0</a>", $description); # Links klickbar machen
-
+    // Replace vimeo, youtube and urls
+    $description = news_form($description);
+    
     $date = date('d M. Y H:i \\U\\h\\r', filemtime($file));
     $newsurl = str_replace($verzeichnis_raw,"",$file);
    
@@ -112,9 +121,9 @@
     // Pagination
     echo '        <span class="pagination">';
     if (!empty($prev_url)) { 
-      echo '<a href="index.php?item='. $prev_url .'" class="button" title="&Auml;ltere Eintr&auml;ge">«</a> '; } 
+      echo '<a href="index.php?item='. $prev_url .'" class="button" title="'. $prev_name.'">«</a> '; } 
     echo '<a href="index.php" class="button">Zur&uuml;ck zur &Uuml;bersicht</a>';
-    if (!empty($next_url)) { echo ' <a href="index.php?item='. $next_url .'" class="button" title="Neuere Eintr&auml;ge">»</a>'; } 
+    if (!empty($next_url)) { echo ' <a href="index.php?item='. $next_url .'" class="button" title="'. $next_name.'">»</a>'; } 
     echo '      </span>';
 
     echo '        <span class="date">'.$date.'</span> ';
@@ -122,7 +131,7 @@
     echo '        <p class="boldfirst">'.$description."</p>\n";
     echo '      </li>';
     echo '    </ul>';
-    echo '    <div class="right bkbtn"><a href="'.$_SERVER['SCRIPT_NAME'].'">Zur&uuml;ck</a> </div>';
+    echo '    <div class="right bkbtn"><a href="'.$_SERVER['SCRIPT_NAME'].'" class="button">Zur&uuml;ck</a> </div>';
             
   } else {
   
@@ -162,9 +171,11 @@
       $desc_array = $root->get_elements_by_tagname("description");
       $description = extractText($desc_array);
       $description = trim_text($description, 200, $ellipses = true, $strip_html = true);
+      // Replace Linebreaks
       $description = str_replace( $r1, $r2, $description );
-      $description = preg_replace("~[[:alpha:]]+://[^<>[:space:]]+[[:alnum:]/]~","<a href=\"\\0\" target=\"_blank\">\\0</a>", $description); # Links klickbar machen
-
+      // Replace vimeo, youtube and urls
+      $description = news_form($description);
+      
       $date = date('d M. Y H:i \\U\\h\\r', filemtime($file)); // Normal Format
       $newsurl = str_replace($verzeichnis_raw,"",$file);
    
@@ -177,7 +188,7 @@
       }    
     
       echo '  <li>'."\n";
-      echo '        <span class="date">'.$date.'</span> ';
+      echo '      <span class="date">'.$date.'</span> ';
       echo '      <a href="'.$_SERVER['SCRIPT_NAME'].'?item='.$newsurl.'">'.$headline."</a>\n";
       echo '        <p class="boldfirst">'.$description."</p>\n";
       echo '    </li>'."\n";
@@ -185,9 +196,9 @@
     echo '</ul>';
     if (NEWS_ARCHIVE == "1") {
       if (isset($_REQUEST['archive'])) {
-        echo '    <div class="right bkbtn"><a href="'.$_SERVER['SCRIPT_NAME'].'">Zur&uuml;ck</a> </div>';
+        echo '    <div class="right bkbtn"><a href="'.$_SERVER['SCRIPT_NAME'].'" class="button">Zur&uuml;ck</a> </div>';
       } else {
-        echo '    <div class="right bkbtn"><a href="'.$_SERVER['SCRIPT_NAME'].'?archive=all">&Auml;ltere</a> </div>';
+        echo '    <div class="right bkbtn"><a href="'.$_SERVER['SCRIPT_NAME'].'?archive=all" class="button">&Auml;ltere</a> </div>';
       }
     } 
   }

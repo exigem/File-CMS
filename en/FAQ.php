@@ -24,8 +24,8 @@
     
     <div class="left cont_left shadowed">
       <h1>About <?= SITE_NAME ?></h1>
-      <p><?= SITE_NAME ?> basiert auf Dateien und generiert daraus den Inhalt der Seiten und die Newseinträge.</p>
-      <p>Zur Zeit befindet sich das System noch in einer frühen Entwicklungsphase. Wir arbeiten jedoch kontinuierlich an der Erweiterung und Aktualität. </p>
+      <p><?= SITE_NAME ?> based on Files and generate the content for the pages and newsposts</p>
+      <p>At the Time we are in an early Productionstate. But we are working continully on the Actuallity and Stabillity . </p>
       
       <h1>Features</h1>
       <ul id="news">
@@ -35,7 +35,7 @@
         <li>Automatic generated feedsfrom News posts.</li>
         <li>Multilanguage support</li>
         <li>Simple Themeable by css</li>
-        <li></li>
+        <li>&nbsp;</li>
       </ul>
       
     </div>

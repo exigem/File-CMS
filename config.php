@@ -18,7 +18,7 @@ define ("SITE_PUBLISHER", "eXigem Media"); // Der Name der Seite
 define ("DEFAULT_LANGUAGE", "de");		// Der Name der Seite
 
 define ("DEFAULT_FEED", "atom");      // Standard Newsfeedformat
-define ("MAXNEWS", "3");              // Maximale News
+define ("MAXNEWS", "2");              // Maximale News
 define ("NEWS_ARCHIVE", "1");         // News Archive anzeigen
 define ("NEWS_ARCHIVE_MAX", "42");    // Maximale News Archive Einträge 
 define ("NEWS_FEED_MAX", "10");       // Maximale News Feed Einträge
@@ -35,7 +35,7 @@ define ("FLATTR", "0"); 	            // IMDB
 define ("FLATTR_URL", "http://flattr.com/"); // IMDB URL
 define ("IMDB", "0"); 	              // IMDB 
 define ("IMDB_URL", "http://imdb.com/"); // IMDB URL
-define ("IGG", "1");   	          // Twitter
+define ("IGG", "0");   	          // Twitter
 define ("IGG_URL", "http://www.indiegogo.com/"); 	// Twitter URL
 define ("TWITTER", "1");   	          // Twitter
 define ("TWITTER_URL", "https://twitter.com/#!/exigem"); 	// Twitter URL

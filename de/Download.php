@@ -31,7 +31,7 @@
     <h1><?= str_replace(".php","",basename($_SERVER['PHP_SELF'])) ?></h1>  
   
   <p>Hier finden Sie den Link zur aktuellen Version auf GitHub.</p>
-  <p><a href="" target="_blank">File-CMS</a> &#64;github</p>
+  <p><a href="https://github.com/exigem/File-CMS" target="_blank">File-CMS</a> &#64;github</p>
     
   </div>
   

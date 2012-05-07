@@ -36,14 +36,6 @@
       </p>
     </div>
 
-<!--    <div class="team shadowed">
-      <img class="hov" src="../inc/img/subnetzero.jpg" alt="" /><br />
-      <p>
-        <b>Jan Marienfeldt</b><br /><br />
-        Publishing<br />
-      </p>
-    </div> -->
-
     <div class="team shadowed">
       <img class="hov" src="../inc/img/drjack.png" alt="" /><br />
       <p>

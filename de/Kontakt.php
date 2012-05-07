@@ -181,7 +181,7 @@ function P91Captcha(sid){
 	  <?php if(isset($emailSent) && $emailSent == true) { ?>
 
 	  <meta http-equiv="refresh" content="3; url=<?php echo $_SERVER['SCRIPT_NAME']; ?>" />	  
-    <div class="right cont_right shadowed" style="widht:240px;margin:180px 0 0 20px;">
+    <div class="right cont_right shadowed" style="widht:240px;margin:0 0 0 20px;">
       <div id="contact" class="section">
         <div class="container content">
     	    <p style="font-size:450%;margin:50px 0 50px 10px;" class="left info">&#10004;</p>
@@ -242,7 +242,7 @@ function P91Captcha(sid){
 
 
 	      <div class="formblock">
-	      <button name="submit" type="submit" class="subbutton">Absenden</button>
+	      <button name="submit" type="submit" class="button">Absenden</button>
 	      <input type="hidden" name="submitted" id="submitted" value="true" />
 	      </div>
 

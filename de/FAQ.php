@@ -26,16 +26,16 @@
       <h1>&Uuml;ber <?= SITE_NAME ?></h1>
       <p><?= SITE_NAME ?> basiert auf Dateien und generiert daraus den Inhalt der Seiten und die Newseinträge.</p>
       <p>Zur Zeit befindet sich das System noch in einer frühen Entwicklungsphase. Wir arbeiten jedoch kontinuierlich an der Erweiterung und Aktualität. </p>
-      
+      <p>Hintergrundbild von <a href="http://www.subtlepatterns.com/">www.subtlepatterns.com</a></p>
       <h1>Features</h1>
       <ul id="news">
         <li>Datei basierend</li>
         <li>Keine extra Datenbank (NoSQL)</li>
         <li>Automatische Menu generierung aus den Dateinamen (inkl. Ordner)</li>
-        <li>Automatische News und Feeds generierung aus xml Dateien</li>
+        <li>Automatische News und Feeds generierung aus xml Dateien (inkl. Vimeo, YouTube und normale URLs)</li>
         <li>Mehrsprachiger Seitenaufbau durch einfachen Aufbau</li>
         <li>Einfaches Theme erstellung mittels css Datei</li>
-        <li></li>
+        <li>&nbsp;</li>
       </ul>
       
     </div>

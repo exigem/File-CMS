@@ -1,11 +1,8 @@
 <?xml version="1.0"?>
 <news>
-  <title>Erster Newseintrag</title>
+  <title>First Newspost</title>
   <status>online</status>
   <authors>Maik Vattersen</authors>
-  <description>Der erste Newseintrag mit dem neuen System. Links werden automatisch anklickbar gemacht ( http://www.exigem.com/ ). Es gibt eine Archivfunktion und eine Einzelansicht, in dieser werden die vollen Texte angezeigt. In der Übersicht und in der Archivansicht werden nur die ersten 320 Zeichen angezeigt. 
-  
-  
-  In den News Beiträgen kann man allerlei nüztliche Informationen weitergeben, die letzen 10 einträge sind auch als RSS http://spike/vaddi/brueder/feed.php RSS2 http://spike/vaddi/brueder/feed.php?type=rss2 oder Atom 1.0 http://spike/vaddi/brueder/feed.php?type=atom sowie http://spike/vaddi/brueder/feed.php?type=atom0 zu finden.
+  <description>This is an example for a Newspost. Just copy, rename and edit the file to create a new Newspost.
   </description>
 </news>

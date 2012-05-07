@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <news>
-  <title>Neues Theme</title>
+  <title>Vimeo Video News</title>
   <status>online</status>
   <authors>Maik Vattersen</authors>
-  <description>Neues Theme auf Basis der Arbeit aus der http://www.brueder-film.de/index.php Seite wurde ein einfaches Theme erstellt. Wir haben die schicken Effekte übernommen und werden in den kommenden Tagen das Grundlayout überarbeiten. Die Sprachenauswahlfunktion muss dringend überarbeitet oder redesigned werden.
-  
-  In der einzel Newsansicht soll die Formatirung aus den xml Dateien übernommen werden (Zeilenumbrüche usw.) zur Zeit wird der Text einfach in einem durch Angezeigt.
+  <description>This is an example for a Newspost including a Vimeo Videourl.
+ http://player.vimeo.com/video/40389040
+ Some other Text under the Videoframe and a Link http://www.exigem.com/
   </description>
 </news>

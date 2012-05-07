@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <news>
-  <title>Der Footer Bereich quängelt</title>
+  <title>Textblock zw. den Videos</title>
   <status>online</status>
   <authors>Maik Vattersen</authors>
-  <description>Die Sprachauswahlfunktion im Footerbereich funtioniert zur Zeit nicht in Unterordnern.
+  <description>Zwischen den Videos sollte man vieleicht immer einen Textnewsblock einfügen.
   </description>
 </news>

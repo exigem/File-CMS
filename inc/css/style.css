@@ -78,7 +78,7 @@ body {
 
 /* Main Link Control */
 
-a:link {
+a:link, button {
   color:#aaa;
   text-decoration:none;
   -moz-transition: color 0.4s ease;
@@ -140,6 +140,38 @@ nav .hov:hover {
 	transition-duration: 20ms;
 }
 
+/* Buttons */
+a.button, button {
+  display:inline;
+  font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+/*  font-size:100%;*/
+  line-height:130%;
+  margin:0 3px 0 3px;
+  text-decoration:none;
+/*  color:#565656;*/
+  cursor:pointer;
+  padding:1px 6px;
+  background: #EEEEEE;
+  background: -moz-linear-gradient(top, #E4E4E4, #F3F3F3 33%, #C1C1C1 66%, #A7A7A7);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #E4E4E4), color-stop(.33, #F3F3F3), color-stop(.66, #C1C1C1), to(#A7A7A7)); 
+  -moz-border-radius: .3em;
+  -webkit-border-radius: .3em;
+  border-radius: .3em;
+  border: 1px solid #969696;
+  border-top: 1px solid #CECECE;
+  border-bottom: 1px solid #717171;
+  text-shadow: 1px 1px 1px #E9E9E9;
+}
+
+a.button:hover, button:hover {
+  text-shadow: 1px 1px 1px #E9E9E9;
+  background: #014464;
+  background: -moz-linear-gradient(top, #A7A7A7, #999999 13%, #BFBFBF 46%, #A7A7A7);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #A7A7A7), color-stop(.13, #999999), color-stop(.46, #BFBFBF), to(#A7A7A7));
+  color:#000;
+  
+}
+
 /* Header */
 
 header {
@@ -153,9 +185,26 @@ nav ul a:link, nav ul a:visited {color:#fff;display:block;padding:3px 10px;margi
 nav ul li:hover {
 text-shadow:0 0 3px #fff;
 }
-nav ul .curr a {text-shadow:0 0 3px #fff;}
 
+/* Menu bei Seitenaufruf ein und aus faden */
+
+@-webkit-keyframes nav-1 { 50% { color: #513220; } }
+@-moz-keyframes nav-1 { 50% { color: #513220; } }
+@-ms-keyframes nav-1 { 50% { color: #513220; } }
+nav ul .nav-1 a { -webkit-animation: nav-1 1.5s 0.5s ease 1; -moz-animation: nav-1 1.5s 0.5s ease 1; -ms-animation: nav-1 1.5s 0.5s ease 1; }
+
+/* Current Menulink */
+@-webkit-keyframes nav-curr { 0% { text-shadow:0 0 0 #fff; } }
+@-moz-keyframes nav-curr { 0% { text-shadow:0 0 0 #fff; } }
+@-ms-keyframes nav-curr { 0% { text-shadow:0 0 0 #fff; } }
 nav ul.admin_head {font-size:60%;margin:-15px 0 0 0;}
+nav ul .curr a { 
+  -webkit-animation: nav-curr 1.5s ease-out 1; 
+  -moz-animation: nav-curr 1.5s ease-in 1; 
+  -ms-animation: nav-curr 1.5s ease-out 1;
+  text-shadow:0 0 3px #fff;
+}
+
 /* Content */
 
 #content {
@@ -169,7 +218,7 @@ nav ul.admin_head {font-size:60%;margin:-15px 0 0 0;}
 .cont_right {width:500px;margin:0 20px 0 0;}
 .cont_index,
 .cont_archive,
-.cont_item {max-height:460px;overflow:auto;}
+.cont_item {max-height:470px;overflow:auto;}
 .cont_left h1, .cont_right h1 {margin-top:5px;}
 
 .main_index {margin:45px 0 160px 40%;width:200px;text-align:center;}
@@ -240,6 +289,9 @@ article .news .bkbtn {margin:0 10px 10px 0;}
   font-size:150%;
   line-height:90%;
 }
+article .news iframe {
+  margin:10px 0 10px 10px;
+}
 article .news .date {
   float:right;
   margin:0 15px 0 0;
@@ -259,12 +311,10 @@ ul#news {
 ul#news li, .news {
   margin:10px 0;
 }
-ul#news a:link, .news .bkbtn a:link,
-ul#news a:focus,.news .bkbtn a:focus,
-ul#news a:visited, .news .bkbtn a:visited {
+article a:link, article a:focus, article a:visited, button {
   color:#777;
 }
-ul#news a:hover, .news .bkbtn a:hover, .cont_left a:hover {
+article a:hover {
   color:#FF9600;
 }
 
